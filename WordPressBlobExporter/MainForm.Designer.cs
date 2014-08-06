@@ -42,20 +42,20 @@
             // 
             this.textBoxSourcePath.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxSourcePath.Location = new System.Drawing.Point(102, 12);
+            this.textBoxSourcePath.Location = new System.Drawing.Point(112, 12);
             this.textBoxSourcePath.Name = "textBoxSourcePath";
-            this.textBoxSourcePath.Size = new System.Drawing.Size(297, 20);
+            this.textBoxSourcePath.Size = new System.Drawing.Size(287, 20);
             this.textBoxSourcePath.TabIndex = 0;
             this.textBoxSourcePath.TextChanged += new System.EventHandler(this.textBox_TextChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(48, 15);
+            this.label1.Location = new System.Drawing.Point(12, 15);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(48, 13);
+            this.label1.Size = new System.Drawing.Size(94, 13);
             this.label1.TabIndex = 1;
-            this.label1.Text = "XML file:";
+            this.label1.Text = "Blog export (*.xml):";
             // 
             // button1
             // 
@@ -63,7 +63,7 @@
             this.button1.Location = new System.Drawing.Point(405, 10);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(76, 23);
-            this.button1.TabIndex = 2;
+            this.button1.TabIndex = 1;
             this.button1.Text = "Browse";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.ButtonSrcPath_Click);
@@ -72,10 +72,10 @@
             // 
             this.textBoxDestinationPath.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxDestinationPath.Location = new System.Drawing.Point(102, 41);
+            this.textBoxDestinationPath.Location = new System.Drawing.Point(109, 41);
             this.textBoxDestinationPath.Name = "textBoxDestinationPath";
-            this.textBoxDestinationPath.Size = new System.Drawing.Size(297, 20);
-            this.textBoxDestinationPath.TabIndex = 0;
+            this.textBoxDestinationPath.Size = new System.Drawing.Size(290, 20);
+            this.textBoxDestinationPath.TabIndex = 2;
             this.textBoxDestinationPath.TextChanged += new System.EventHandler(this.textBox_TextChanged);
             // 
             // label2
@@ -93,7 +93,7 @@
             this.button2.Location = new System.Drawing.Point(405, 39);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(76, 23);
-            this.button2.TabIndex = 2;
+            this.button2.TabIndex = 3;
             this.button2.Text = "Browse";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.ButtonDstPath_Click);
@@ -105,7 +105,7 @@
             this.buttonExport.Location = new System.Drawing.Point(405, 68);
             this.buttonExport.Name = "buttonExport";
             this.buttonExport.Size = new System.Drawing.Size(75, 23);
-            this.buttonExport.TabIndex = 3;
+            this.buttonExport.TabIndex = 4;
             this.buttonExport.Text = "&Export";
             this.buttonExport.UseVisualStyleBackColor = true;
             this.buttonExport.Click += new System.EventHandler(this.buttonExport_Click);
@@ -118,7 +118,7 @@
             this.progressBar1.TabIndex = 4;
             this.progressBar1.Visible = false;
             // 
-            // Form1
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -131,8 +131,8 @@
             this.Controls.Add(this.textBoxDestinationPath);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBoxSourcePath);
-            this.Name = "Form1";
-            this.Text = "WordPress Blob Exporter";
+            this.Name = "MainForm";
+            this.Text = "WordPress Attachment Exporter";
             this.ResumeLayout(false);
             this.PerformLayout();
 
