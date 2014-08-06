@@ -132,7 +132,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBoxSourcePath);
             this.Name = "MainForm";
-            this.Text = "WordPress Attachment Exporter";
+            this.Text = "WordPress Blob Exporter";
             this.ResumeLayout(false);
             this.PerformLayout();
 
