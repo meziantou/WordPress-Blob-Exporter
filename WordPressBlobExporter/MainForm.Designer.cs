@@ -46,7 +46,7 @@
             this.textBoxSourcePath.Name = "textBoxSourcePath";
             this.textBoxSourcePath.Size = new System.Drawing.Size(287, 20);
             this.textBoxSourcePath.TabIndex = 0;
-            this.textBoxSourcePath.TextChanged += new System.EventHandler(this.textBox_TextChanged);
+            this.textBoxSourcePath.TextChanged += new System.EventHandler(this.textBoxSrc_TextChanged);
             // 
             // label1
             // 
@@ -72,9 +72,9 @@
             // 
             this.textBoxDestinationPath.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxDestinationPath.Location = new System.Drawing.Point(109, 41);
+            this.textBoxDestinationPath.Location = new System.Drawing.Point(112, 41);
             this.textBoxDestinationPath.Name = "textBoxDestinationPath";
-            this.textBoxDestinationPath.Size = new System.Drawing.Size(290, 20);
+            this.textBoxDestinationPath.Size = new System.Drawing.Size(287, 20);
             this.textBoxDestinationPath.TabIndex = 2;
             this.textBoxDestinationPath.TextChanged += new System.EventHandler(this.textBox_TextChanged);
             // 
@@ -120,6 +120,7 @@
             // 
             // MainForm
             // 
+            this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(493, 103);
@@ -133,6 +134,8 @@
             this.Controls.Add(this.textBoxSourcePath);
             this.Name = "MainForm";
             this.Text = "WordPress Blob Exporter";
+            this.DragDrop += new System.Windows.Forms.DragEventHandler(this.MainForm_DragDrop);
+            this.DragEnter += new System.Windows.Forms.DragEventHandler(this.MainForm_DragEnter);
             this.ResumeLayout(false);
             this.PerformLayout();
 
